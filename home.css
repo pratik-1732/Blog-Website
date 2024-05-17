@@ -6,6 +6,84 @@ body {
 }
 
 /* navbar */
-.nav{
-    display: flex;
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.2rem 5rem;
+  height: 4rem;
+  background-color: white;
+}
+.logo p {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #000;
+}
+.nav-list p {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #000;
+}
+
+/* page heading  */
+.page-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem 20rem;
+}
+.head-heading {
+  font-size: 3rem;
+  font-weight: 700;
+}
+.head-text {
+  font-size: 1.2rem;
+  font-weight: 200;
+  padding: 0rem 8rem;
+}
+
+/* blog section  */
+.blog-sec {
+  display: flex;
+  flex-direction: row;
+}
+.post {
+  width: 75%;
+  padding-left: 4rem;
+  padding-right: 1rem;
+}
+.related-post {
+  width: 25%;
+  padding-right: 3rem;
+  padding-left: 0.5rem;
+}
+.latest {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.read-post {
+  display: flex;
+  justify-content: flex-start;
+  height: auto;
+  padding: 1.5rem 1rem;
+}
+.post-img img {
+  height: 300px;
+  height: 300px;
+  border-radius: 0.75rem;
+  padding-right: 2rem;
+}
+.post-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-left: 1rem;
+}
+.container-foot {
+  display: flex;
+  align-items: center;
+}
+.read-btn {
+  padding-left: 4rem;
 }
