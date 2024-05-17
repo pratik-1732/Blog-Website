@@ -65,15 +65,15 @@ body {
 .read-post {
   display: flex;
   justify-content: flex-start;
-  height: auto;
+  height: 250px;
   padding: 1.5rem 1rem;
   margin: 1rem 0rem;
   background-color: rgb(34, 47, 75);
   border-radius: 0.75rem;
 }
 .post-img img {
-  height: 300px;
-  height: 300px;
+  height: 250px;
+  height: 250px;
   border-radius: 0.75rem;
   padding-right: 2rem;
 }
