@@ -1,0 +1,72 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: rgb(17, 24, 39);
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+  font-weight: 400;
+}
+
+/* navbar */
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.2rem 5rem;
+  height: 4rem;
+  background-color: white;
+}
+.logo p {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #000;
+}
+.nav-list p {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #000;
+}
+.nav-right input {
+  font-size: 1rem;
+  border: 2px solid black;
+  border-radius: 4px;
+  padding: 4px 6px;
+  margin: 5px;
+}
+.nav-right .search-btn {
+  font-size: 1rem;
+  border: 2px solid black;
+  border-radius: 4px;
+  padding: 3px 5px;
+  margin: 2px;
+  cursor: pointer;
+}
+.search-btn:hover {
+  background-color: black;
+  color: white;
+}
+
+/* page heading  */
+.page-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 4rem 1rem;
+  padding: 0rem 10rem;
+}
+.head-heading {
+  font-family: var(--font2);
+  font-size: 4rem;
+  font-weight: 700;
+}
+.head-text {
+  font-size: 1.7rem;
+  font-family: var(--font1);
+  font-weight: 300;
+  margin-top: 3rem;
+  /* padding: 0rem 8rem; */
+}
+
+/* blog section  */
