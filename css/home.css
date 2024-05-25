@@ -4,7 +4,7 @@
 }
 body {
   background-color: rgb(17, 24, 39);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font6);
   color: white;
   font-weight: 400;
 }
@@ -19,6 +19,7 @@ body {
   background-color: white;
 }
 .logo p {
+  font-family: var(--font5);
   font-size: 2rem;
   font-weight: 600;
   color: #000;
