@@ -13,6 +13,7 @@
   --font4: "Libre Baskerville", serif;
   --font5: "Fira Sans Condensed", sans-serif;
   --font6: "Cormorant", serif;
+  --bg-color: #d7d6d1;
 }
 .max-width1 {
   max-width: 90vw;

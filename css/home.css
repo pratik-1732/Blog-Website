@@ -3,12 +3,17 @@
   padding: 0;
 }
 body {
-  background-color: rgb(17, 24, 39);
+  /* background-color: rgb(17, 24, 39); */
+  background-color: white;
   font-family: var(--font6);
-  color: white;
+  color: black;
   font-weight: 400;
 }
 
+.nav-head {
+  background-color: var(--bg-color);
+  height: 100vh;
+}
 /* navbar */
 .nav {
   display: flex;
@@ -16,7 +21,7 @@ body {
   align-items: center;
   padding: 0.2rem 5rem;
   height: 4rem;
-  background-color: white;
+  /* background-color: black; */
 }
 .logo p {
   font-family: var(--font5);
@@ -52,10 +57,13 @@ body {
 /* page heading  */
 .page-header {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  /* align-items: center; */
+  justify-content: space-around;
   margin: 4rem 1rem;
   padding: 0rem 10rem;
+}
+.head-info {
+  width: 50%;
 }
 .head-heading {
   font-family: var(--font2);
@@ -69,5 +77,88 @@ body {
   margin-top: 3rem;
   /* padding: 0rem 8rem; */
 }
+.head-img {
+  width: 30%;
+  display: flex;
+  align-items: center;
+}
+.head-img img {
+  height: 30rem;
+  width: 30rem;
+}
 
 /* blog section  */
+.blog-sec {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.card {
+  height: 50%;
+  width: 40%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  /* background-color: rgb(34, 48, 77);
+  border: 2px solid rgb(159, 169, 189); */
+}
+.card-head {
+  font-weight: bold;
+  font-size: 35px;
+  line-height: 150%;
+  padding-top: 15px;
+}
+.card-list ul {
+  margin: 32px 0 32px;
+  list-style: none;
+  padding-left: 0;
+}
+.card-list ul li {
+  font-size: 20px;
+  line-height: 165%;
+  border-bottom: 1px solid black;
+  padding: 12px 0;
+  margin-bottom: 0;
+}
+.card-list ul li a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 150%;
+}
+.card-list .all-articles {
+  text-decoration: none;
+  color: black;
+  border-bottom: 0;
+  border-bottom: none;
+  font-weight: bold;
+  font-size: 13px;
+  line-height: 170%;
+  text-transform: uppercase;
+  padding-top: 23px;
+  font-family: europa, sans-serif;
+  letter-spacing: 1px;
+}
+
+.card-sec-one {
+  display: flex;
+  flex-wrap: wrap;
+  height: 100vh;
+  justify-content: space-around;
+  align-items: center;
+  /* background-color: red; */
+  padding: 20px 5px;
+  margin: 10px 0px;
+}
+.sec-card-div {
+  /* background-color: var(--bg-color); */
+}
+.card-sec-two {
+  display: flex;
+  flex-wrap: wrap;
+  height: 100vh;
+  justify-content: space-around;
+  padding: 20px 5px;
+  margin: 10px 0px;
+}
