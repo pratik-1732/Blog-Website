@@ -1,0 +1,95 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  /* background-color: rgb(17, 24, 39); */
+  background-color: white;
+  font-family: var(--font6);
+  color: black;
+  font-weight: 400;
+}
+/* navbar */
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.2rem 5rem;
+  height: 4rem;
+  /* background-color: black; */
+}
+.logo p {
+  font-family: var(--font5);
+  font-size: 2rem;
+  font-weight: 600;
+  color: #8f226e;
+}
+.nav-list p {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #000;
+}
+.nav-right .search-btn {
+  font-size: 1rem;
+  border: 2px solid black;
+  border-radius: 4px;
+  padding: 3px 5px;
+  margin: 2px;
+  cursor: pointer;
+}
+.search-btn:hover {
+  background-color: black;
+  color: white;
+  border: 2px solid white;
+}
+
+/* footer  */
+.foot-sec {
+  background-color: black;
+}
+.footer {
+  height: 80px;
+  width: 50%;
+  display: flex;
+  margin: auto;
+  justify-content: space-evenly;
+  align-items: center;
+  color: white;
+  font-size: 1.3rem;
+}
+.privacy a {
+  text-decoration: none;
+  color: white;
+}
+.privacy a:hover {
+  color: rgb(241, 181, 69);
+}
+.terms a {
+  text-decoration: none;
+  color: white;
+}
+.terms a:hover {
+  color: rgb(241, 181, 69);
+}
+
+/* blog section  */
+.blog {
+  width: 70%;
+  /* background-color: #d7d6d1; */
+  margin: 15px auto;
+  line-height: 200%;
+}
+.blog p {
+  font-size: 1.3rem;
+  letter-spacing: 0.6px;
+  margin: 15px 0px;
+  font-family: minion-pro, serif;
+}
+.blog h1 {
+  text-align: center;
+  font-family: var(--font3);
+}
+.blog h2 {
+  font-size: 1.8rem;
+  margin: 20px 0px;
+}
