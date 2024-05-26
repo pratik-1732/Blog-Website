@@ -27,7 +27,7 @@ body {
   font-family: var(--font5);
   font-size: 2rem;
   font-weight: 600;
-  color: #000;
+  color: #8f226e;
 }
 .nav-list p {
   font-size: 1.5rem;
@@ -52,6 +52,7 @@ body {
 .search-btn:hover {
   background-color: black;
   color: white;
+  border: 2px solid white;
 }
 
 /* page heading  */
@@ -71,9 +72,10 @@ body {
   font-weight: 700;
 }
 .head-text {
-  font-size: 1.7rem;
-  font-family: var(--font1);
-  font-weight: 300;
+  font-size: 1.4rem;
+  font-family: Georgia;
+  line-height: 140%;
+  /* font-weight: 300; */
   margin-top: 3rem;
   /* padding: 0rem 8rem; */
 }
@@ -85,24 +87,45 @@ body {
 .head-img img {
   height: 30rem;
   width: 30rem;
+  border-radius: 45px;
 }
 
 /* blog section  */
+.blog-sec-head {
+  margin: 50px 0px;
+}
+.blog-sec-head p {
+  font-size: 1.9rem;
+  font-weight: bold;
+}
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  margin: 30px 0px;
+}
 .blog-sec {
   display: flex;
   align-items: center;
   flex-direction: column;
 }
 .card {
-  height: 50%;
-  width: 40%;
+  height: 450px;
+  width: 45%;
   display: flex;
   align-items: center;
   flex-direction: column;
   /* background-color: rgb(34, 48, 77);
   border: 2px solid rgb(159, 169, 189); */
 }
+.card:hover {
+  background-color: #d7d6d1;
+  border: 1px solid rgb(124, 118, 118);
+  border-radius: 20px;
+}
 .card-head {
+  font-family: var(--font3);
   font-weight: bold;
   font-size: 35px;
   line-height: 150%;
@@ -121,9 +144,10 @@ body {
   margin-bottom: 0;
 }
 .card-list ul li a {
+  font-family: minion-pro, serif;
   text-decoration: none;
   color: black;
-  font-weight: bold;
+  /* font-weight: bold; */
   font-size: 21px;
   line-height: 150%;
 }
@@ -132,6 +156,7 @@ body {
   color: black;
   border-bottom: 0;
   border-bottom: none;
+  font-family: minion-pro, serif;
   font-weight: bold;
   font-size: 13px;
   line-height: 170%;
@@ -141,24 +166,31 @@ body {
   letter-spacing: 1px;
 }
 
-.card-sec-one {
+/* footer  */
+.foot-sec {
+  background-color: black;
+}
+.footer {
+  height: 80px;
+  width: 50%;
   display: flex;
-  flex-wrap: wrap;
-  height: 100vh;
-  justify-content: space-around;
+  margin: auto;
+  justify-content: space-evenly;
   align-items: center;
-  /* background-color: red; */
-  padding: 20px 5px;
-  margin: 10px 0px;
+  color: white;
+  font-size: 1.3rem;
 }
-.sec-card-div {
-  /* background-color: var(--bg-color); */
+.privacy a {
+  text-decoration: none;
+  color: white;
 }
-.card-sec-two {
-  display: flex;
-  flex-wrap: wrap;
-  height: 100vh;
-  justify-content: space-around;
-  padding: 20px 5px;
-  margin: 10px 0px;
+.privacy a:hover {
+  color: rgb(241, 181, 69);
+}
+.terms a {
+  text-decoration: none;
+  color: white;
+}
+.terms a:hover {
+  color: rgb(241, 181, 69);
 }
