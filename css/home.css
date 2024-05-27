@@ -21,13 +21,13 @@ body {
   align-items: center;
   padding: 0.2rem 5rem;
   height: 4rem;
-  /* background-color: black; */
+  background-color: #333333;
+  color: #fff;
 }
 .logo p {
   font-family: var(--font5);
   font-size: 2rem;
   font-weight: 600;
-  color: #8f226e;
 }
 .nav-list p {
   font-size: 1.5rem;
@@ -39,20 +39,19 @@ body {
   border: 2px solid black;
   border-radius: 4px;
   padding: 4px 6px;
-  margin: 5px;
+  margin: 5px 20px 5px;
 }
 .nav-right .search-btn {
-  font-size: 1rem;
-  border: 2px solid black;
-  border-radius: 4px;
-  padding: 3px 5px;
-  margin: 2px;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
   cursor: pointer;
+  font-size: 16px;
 }
 .search-btn:hover {
-  background-color: black;
-  color: white;
-  border: 2px solid white;
+  background-color: #0056b3;
 }
 
 /* page heading  */
@@ -168,7 +167,7 @@ body {
 
 /* footer  */
 .foot-sec {
-  background-color: black;
+  background-color: #333333;
 }
 .footer {
   height: 80px;
