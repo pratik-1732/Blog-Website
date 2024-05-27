@@ -7,8 +7,18 @@
     <!-- css files  -->
     <link rel="stylesheet" href="/css/common.css" />
     <link rel="stylesheet" href="/css/utility.css" />
+    <link rel="stylesheet" href="/css/comment.css" />
+    <link rel="stylesheet" href="/css/navbar.css" />
   </head>
   <body>
+    <!-- navbar  -->
+    <div class="nav-class">
+      <nav class="navbar">
+        <div class="navbar-logo">MyBlogs</div>
+        <button class="navbar-button" id="home-button">Home</button>
+      </nav>
+    </div>
+    <!-- blog section  -->
     <div class="blog">
       <main>
         <article>
@@ -310,5 +320,34 @@
         </article>
       </main>
     </div>
+    <!-- comment section  -->
+    <div class="comment-section">
+      <h2>Your thoughts about Blog:</h2>
+      <div id="comment-list"></div>
+      <div class="comment-form">
+        <textarea
+          id="comment-input"
+          placeholder="Write your comment here..."
+        ></textarea>
+        <button id="submit-comment">Submit</button>
+      </div>
+    </div>
+
+    <!-- footer  -->
+    <section class="foot-sec">
+      <div class="footer">
+        <div class="copy"><p>@copyright MyBlog</p></div>
+        <div class="privacy">
+          <a href="https://policies.google.com/privacy?hl=en-US">Privacy</a>
+        </div>
+        <div class="terms">
+          <a href="https://policies.google.com/terms?hl=en-US"
+            >Terms of Service</a
+          >
+        </div>
+      </div>
+    </section>
+    <script src="/js/navbar.js"></script>
+    <script src="/js/script.js"></script>
   </body>
 </html>

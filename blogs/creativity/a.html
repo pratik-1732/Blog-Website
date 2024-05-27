@@ -8,17 +8,25 @@
     <!-- css files  -->
     <link rel="stylesheet" href="/css/utility.css" />
     <link rel="stylesheet" href="/css/common.css" />
+    <link rel="stylesheet" href="/css/comment.css" />
+    <link rel="stylesheet" href="/css/navbar.css" />
   </head>
   <body>
     <!-- navbar -->
-    <section>
+    <!-- <section>
       <div class="nav">
         <div class="logo"><p>MyBlog</p></div>
         <div class="nav-right">
-          <button class="search-btn" href="index.html">Home</button>
+          <button class="search-btn">Home</button>
         </div>
       </div>
-    </section>
+    </section> -->
+    <div class="nav-class">
+      <nav class="navbar">
+        <div class="navbar-logo">MyBlogs</div>
+        <button class="navbar-button" id="home-button">Home</button>
+      </nav>
+    </div>
 
     <!-- blog section  -->
     <section>
@@ -160,6 +168,19 @@
       </div>
     </section>
 
+    <!-- comment section  -->
+    <div class="comment-section">
+      <h2>Your thoughts about Blog:</h2>
+      <div id="comment-list"></div>
+      <div class="comment-form">
+        <textarea
+          id="comment-input"
+          placeholder="Write your comment here..."
+        ></textarea>
+        <button id="submit-comment">Submit</button>
+      </div>
+    </div>
+
     <!-- footer  -->
     <section class="foot-sec">
       <div class="footer">
@@ -174,5 +195,7 @@
         </div>
       </div>
     </section>
+    <script src="/js/navbar.js"></script>
+    <script src="/js/script.js"></script>
   </body>
 </html>
