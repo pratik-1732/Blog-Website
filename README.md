@@ -39,10 +39,17 @@ To get a local copy up and running, follow these simple steps.
 ### Installation
 
 1. **Clone the repository**:
+
+```sh
    git clone https://github.com/your-username/blog-website.git
+```
 
 2. **Navigate to the project directory**:
+
+```sh
    cd blog-website
+```
+
 3. **Open the project in your code editor.**
 
 ## Usage
@@ -57,9 +64,9 @@ We welcome contributions to make this project better! Whether it's fixing bugs, 
 
 1. **Fork the Project:** Click on the "Fork" button at the top right of this page to create a copy of the repository in your GitHub account.
 2. **Create a Feature Branch:**
-   git checkout -b feature/AmazingFeature
+   (`git checkout -b feature/AmazingFeature`)
 3. **Commit Your Changes:**
-   git commit -m 'Add some AmazingFeature'
+   (`git commit -m 'Add some AmazingFeature'`)
 4. **Push to the Branch:**
-   git push origin feature/AmazingFeature
+   (`git push origin feature/AmazingFeature`)
 5. **Open a Pull Request:** Navigate to the original repository and click on the "New Pull Request" button to submit your changes for review.
