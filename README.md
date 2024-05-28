@@ -47,13 +47,15 @@ To get a local copy up and running, follow these simple steps.
 
 ## Usage
 
--**Navigating the Blog:** Browse through different sections to find blog posts that interest you. Each section is dedicated to a specific topic, ensuring that the content is well-organized and easy to navigate. -**Reading a Post:** Click on any blog post to read its full content. The posts are displayed in a clean and readable format to enhance the reading experience. -**Leaving Comments:** Engage with the content by scrolling to the bottom of a blog post and leaving your comments. Your feedback and thoughts are valuable for fostering a vibrant community.
+- **Navigating the Blog:** Browse through different sections to find blog posts that interest you. Each section is dedicated to a specific topic, ensuring that the content is well-organized and easy to navigate.
+- **Reading a Post:** Click on any blog post to read its full content. The posts are displayed in a clean and readable format to enhance the reading experience.
+- **Leaving Comments:** Engage with the content by scrolling to the bottom of a blog post and leaving your comments. Your feedback and thoughts are valuable for fostering a vibrant community.
 
 ## Contributing
 
 We welcome contributions to make this project better! Whether it's fixing bugs, enhancing features, or adding new sections, your input is appreciated.
 
-1. **Fork the Project:**Click on the "Fork" button at the top right of this page to create a copy of the repository in your GitHub account.
+1. **Fork the Project:** Click on the "Fork" button at the top right of this page to create a copy of the repository in your GitHub account.
 2. **Create a Feature Branch:**
    git checkout -b feature/AmazingFeature
 3. **Commit Your Changes:**
