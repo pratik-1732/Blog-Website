@@ -1,3 +1,9 @@
+@media (max-width: 1215px) {
+  .page-header {
+    padding: 0 5rem;
+  }
+}
+
 @media (max-width: 1200px) {
   .max-width1,
   .max-width2 {
@@ -8,7 +14,7 @@
     flex-direction: column;
   }
   .search-box {
-    width: 100%;
+    /* width: 100%; */
     margin-bottom: 10px;
   }
   .search-btn {
@@ -27,6 +33,12 @@
   }
   .card {
     margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 830px) {
+  .head-img-div {
+    width: 20rem;
   }
 }
 

@@ -42,7 +42,7 @@ body {
   background-color: #0056b3;
 }
 
-/* footer  */
+/* footer 
 .foot-sec {
   background-color: #333333;
 }
@@ -51,6 +51,35 @@ body {
   width: 50%;
   display: flex;
   margin: auto;
+  justify-content: space-evenly;
+  align-items: center;
+  color: white;
+  font-size: 1.3rem;
+}
+.privacy a {
+  text-decoration: none;
+  color: white;
+}
+.privacy a:hover {
+  color: rgb(241, 181, 69);
+}
+.terms a {
+  text-decoration: none;
+  color: white;
+}
+.terms a:hover {
+  color: rgb(241, 181, 69);
+} */
+
+/* footer  */
+.foot-sec {
+  background-color: #333333;
+  width: 100%;
+}
+.footer {
+  height: 80px;
+  display: flex;
+  /* margin: auto; */
   justify-content: space-evenly;
   align-items: center;
   color: white;
