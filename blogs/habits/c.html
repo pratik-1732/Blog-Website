@@ -5,12 +5,99 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>The Surprising Benefits of Journaling One Sentence Every Day</title>
     <link rel="icon" href="/img/icon 2.jpg" type="image/x-icon" />
-    
+
     <!-- css files  -->
     <link rel="stylesheet" href="/css/common.css" />
     <link rel="stylesheet" href="/css/utility.css" />
     <link rel="stylesheet" href="/css/comment.css" />
     <link rel="stylesheet" href="/css/navbar.css" />
+    <!-- <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@1.29.7/dist/umd/supabase.min.js"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@1"></script>
+    <script>
+      const SUPABASE_URL = "https://sbuizdzimwixuvuygixg.supabase.co";
+      const SUPABASE_KEY =
+        "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InNidWl6ZHppbXdpeHV2dXlnaXhnIiwicm9sZSI6ImFub24iLCJpYXQiOjE3MTY5NzkyMDMsImV4cCI6MjAzMjU1NTIwM30.T0VJVBVbOo8F3UWdf3lAiaJO4J2Jkxed5Mm9CjzVcXQ";
+
+      const { createClient } = supabase;
+      const supabaseClient = createClient(SUPABASE_URL, SUPABASE_KEY);
+      // console.log(supabaseClient);
+
+      // Define your function to be executed after Supabase is initialized
+      async function initializeAndRunScript() {
+        // Your code that interacts with Supabase
+        document.addEventListener("DOMContentLoaded", async () => {
+          // Your code that interacts with Supabase
+          const blogElement = document.querySelector(".blog");
+          const blogId = blogElement.getAttribute("data-blog-id");
+          const commentList = document.getElementById("comment-list");
+          const commentInput = document.getElementById("comment-input");
+          const submitCommentButton = document.getElementById("submit-comment");
+
+          // Function to fetch and display comments
+          async function fetchComments() {
+            try {
+              const { data: comments, error } = await supabaseClient
+                .from("comments")
+                .select("*")
+                .eq("blog_id", blogId)
+                .order("created_at", { ascending: true });
+
+              if (error) {
+                console.error("Error fetching comments:", error);
+                return;
+              }
+
+              commentList.innerHTML = "";
+              comments.forEach((comment, index) => {
+                const commentItem = document.createElement("div");
+                const commentNumber = ("0" + (index + 1)).slice(-2);
+                commentItem.textContent = `${commentNumber}: ${comment.content}`;
+                commentList.appendChild(commentItem);
+              });
+            } catch (error) {
+              console.error("Error fetching comments:", error.message);
+            }
+          }
+
+          // Function to add a comment
+          async function addComment() {
+            try {
+              const content = commentInput.value.trim();
+              if (content === "") {
+                return;
+              }
+
+              console.log(content);
+              console.log(supabaseClient);
+
+              const { data, error } = await supabaseClient
+                .from("comments")
+                .insert([{ blog_id: blogId, content }]);
+
+              if (error) {
+                console.error("Error adding comment:", error);
+                return;
+              }
+
+              commentInput.value = "";
+
+              fetchComments();
+            } catch (error) {
+              console.error("Error adding comment:", error.message);
+            }
+          }
+
+          // Event listener for submit comment button
+          submitCommentButton.addEventListener("click", addComment);
+
+          // Initial fetch of comments
+          fetchComments();
+        });
+      }
+
+      // Call the function to initialize and run your script after Supabase is initialized
+      initializeAndRunScript();
+    </script>
   </head>
   <body>
     <!-- navbar  -->
@@ -21,7 +108,10 @@
       </nav>
     </div>
     <!-- blog section  -->
-    <div class="blog">
+    <div
+      class="blog"
+      data-blog-id="The Surprising Benefits of Journaling One Sentence Every Day"
+    >
       <h1>The Surprising Benefits of Journaling One Sentence Every Day</h1>
 
       <p>
