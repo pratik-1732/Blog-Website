@@ -121,7 +121,7 @@ body {
   flex-direction: column;
 }
 .card {
-  height: 400px;
+  /* height: 400px; */
   width: 45%;
   display: flex;
   align-items: center;
